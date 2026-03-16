@@ -52,52 +52,34 @@ Ds4002-Group14-Projects/
 │   │       • Saves plots to /output/figures/
 │   │
 │   │   └── Script_03_Statistical_Analysis.ipynb
-│   │       └── Performs hypothesis testing:
-│   │           • One-way ANOVA (mean sentiment differences)
-│   │           • Levene’s test (variance assumption)
-│   │           • Tukey HSD post-hoc comparisons
-│   │           • Binomial tests (>50% negative sentiment)
-│   │           • Chi-square test of independence
-│   │           • Cramer's V (effect size)
-│   │           • Saves statistical tables to /output/tables/
-│   │
-│   └── trustpilot_scripts/
-│       │
-│       ├── trustpilot_scraper.ipynb
-│       │   └── Scrapes Trustpilot reviews for:
-│       │       USPS, UPS, FedEx, DHL
-│       │       • Collects review text and ratings
-│       │       • Exports raw review dataset
-│       │
-│       └── trustpilot_analysis.ipynb
-│           └── Performs:
-│               • VADER sentiment analysis
-│               • Exploratory analysis
-│               • Statistical testing (parallel to Reddit analysis)
-│               • Saves outputs to /output/
+│           └── Performs hypothesis testing:
+│              • One-way ANOVA (mean sentiment differences)
+│               • Levene’s test (variance assumption)
+│               • Tukey HSD post-hoc comparisons
+│               • Binomial tests (>50% negative sentiment)
+│               • Chi-square test of independence
+│               • Cramer's V (effect size)
+│               • Saves statistical tables to /output/tables/
+│   
+│               
 │
 ├── output/
     │
     ├── figures/
-    │   └── Saved visualizations used in MI3 presentation
+    │   └── 
     │
     ├── tables/
-    │   ├── anova_results.csv
-    │   ├── tukey_results.csv
-    │   ├── binomial_results.csv
-    │   ├── chi_square_results.csv
-    │   └── summary_mean_compound_ci.csv
+    │   ├── 
+    │   ├── 
+    │   ├── 
+    │   ├── 
+    │   └── 
     │
     ├── shipping_posts_raw.csv
     ├── shipping_comments_raw.csv
     └── shipping_comments_clean.csv
 
 ```
-
-
-
-
-
 
 
 # Instructions for Reproducing Results
