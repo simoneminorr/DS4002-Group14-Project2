@@ -1,5 +1,5 @@
 #  (DS4002 - Group 14)
-This project explores
+This project attempts to use changes in oil prices to predict monthly airline ETF returns beyond what is already captured by the broad SPY stock market. 
 
 ## Contents of this Repository
 
