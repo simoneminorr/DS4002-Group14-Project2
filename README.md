@@ -29,12 +29,16 @@ Ds4002-Group14-Projects/
 │       • Documentation map
 │       • Instructions for reproducing results
 │
+│   
+├── DATA/
+│    │
+│    ├── figures/                                 
+│               
+│
 ├── SCRIPTS/
 │   │
-│   ├── reddit_script/
-│   │   │
-│   │   ├── Script_01_Data_Collection.ipynb
-│   │   │   └── Scrapes Reddit posts and comments for:
+│   ├── Script_01_Data_Collection.ipynb
+│   │   └── Scrapes Reddit posts and comments for:
 │   │       USPS, UPS, FedEx, DHL
 │   │       • Cleans text data
 │   │       • Removes boilerplate/spam
@@ -43,23 +47,23 @@ Ds4002-Group14-Projects/
 │   │           - shipping_comments_raw.csv
 │   │           - shipping_comments_clean.csv
 │   │
-│   │   ├── Script_02_Exploratory_Analysis.ipynb
-│   │   │   └── Performs exploratory data analysis (EDA):
+│   ├── Script_02_Exploratory_Analysis.ipynb
+│   │   └── Performs exploratory data analysis (EDA):
 │   │       • Comment counts by company
 │   │       • Sentiment score distributions
 │   │       • Mean sentiment with 95% confidence intervals
 │   │       • Visualizations (histograms, boxplots, stacked bar charts)
 │   │       • Saves plots to /output/figures/
 │   │
-│   │   └── Script_03_Statistical_Analysis.ipynb
-│           └── Performs hypothesis testing:
-│              • One-way ANOVA (mean sentiment differences)
-│               • Levene’s test (variance assumption)
-│               • Tukey HSD post-hoc comparisons
-│               • Binomial tests (>50% negative sentiment)
-│               • Chi-square test of independence
-│               • Cramer's V (effect size)
-│               • Saves statistical tables to /output/tables/
+│   ├── Script_03_Statistical_Analysis.ipynb
+│        └── Performs hypothesis testing:
+│            • One-way ANOVA (mean sentiment differences)
+│            • Levene’s test (variance assumption)
+│            • Tukey HSD post-hoc comparisons
+│            • Binomial tests (>50% negative sentiment)
+│            • Chi-square test of independence
+│            • Cramer's V (effect size)
+│            • Saves statistical tables to /output/tables/
 │   
 │               
 │
