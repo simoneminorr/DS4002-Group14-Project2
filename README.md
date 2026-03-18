@@ -13,6 +13,11 @@ Software:
 Add-on Packages: 
  - pandas
  - yFinance
+ - numpy
+ - warnings
+ - os
+ - matplotlib
+ - sklearn
 
 Platform Used:
  - macOS
