@@ -56,7 +56,7 @@ Ds4002-Group14-Project2/
 │           • Saves plots to /output/figures/
 │               
 │
-└── output/
+└── OUTPUT/
     │
     ├── 01_normalized_monthly_prices.png
     ├── 02_monthly_returns.png
