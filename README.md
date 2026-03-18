@@ -19,7 +19,7 @@ Platform Used:
 ## Documentation Map
 
 ```text
-Ds4002-Group14-Projects/
+Ds4002-Group14-Project2/
 │
 ├── README.md
 │   └── Contains:
