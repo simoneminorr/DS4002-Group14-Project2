@@ -9,6 +9,7 @@ Software:
  - Google Colab
  - Git / GitHub
  - Jupyter Notebook
+ - Python
 
 Add-on Packages: 
  - pandas
