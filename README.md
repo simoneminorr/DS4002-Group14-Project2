@@ -114,7 +114,7 @@ pip install pandas numpy matplotlib seaborn scipy statsmodels vaderSentiment req
 
 ---
 
-## 3. Reproduce Reddit Analysis (Main Study Results)
+## 3. Reproduce Yahoo Finance Analysis (Main Study Results)
 
 Navigate to:
 
