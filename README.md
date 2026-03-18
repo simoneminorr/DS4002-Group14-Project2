@@ -38,14 +38,12 @@ Ds4002-Group14-Project2/
 ├── SCRIPTS/
 │   │
 │   ├── Script 01: Load Data.ipynb
-│   │   └── Scrapes Reddit posts and comments for:
-│   │       USPS, UPS, FedEx, DHL
+│   │   └── Scrapes Yahoo Finance for:
+│   │       CL=F, JETS, SPY
 │   │       • Cleans text data
 │   │       • Removes boilerplate/spam
 │   │       • Exports:
-│   │           - shipping_posts_raw.csv
-│   │           - shipping_comments_raw.csv
-│   │           - shipping_comments_clean.csv
+│   │           - raw_yfinance_daily_data.csv
 │   │
 │   └── Script 02: Exploratory & Statistical Analysis.ipynb
 │       └── Performs exploratory data analysis (EDA) :
