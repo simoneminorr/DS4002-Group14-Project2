@@ -1,5 +1,5 @@
 # Time Series Analysis of Oil Prices and Their Potential in Forecasting Airline Stocks (DS4002 - Group 14)
-This project attempts to use changes in oil prices to predict monthly airline ETF returns beyond what is already captured by the broad SPY stock market. 
+The goal of this project is to evaluate whether changes in oil prices help explain and predict monthly airline ETF returns. Specifically, we aim to determine whether lagged monthly returns of WTI crude oil improve forecasts of monthly JETS returns after controlling for broad market performance through SPY.
 
 ## Contents of this Repository
 
@@ -11,7 +11,8 @@ Software:
  - Jupyter Notebook
 
 Add-on Packages: 
- - p
+ - pandas
+ - yFinance
 
 Platform Used:
  - macOS
@@ -40,8 +41,8 @@ Ds4002-Group14-Project2/
 │   ├── Script 01: Load Data.ipynb
 │   │   └── Scrapes Yahoo Finance for:
 │   │       CL=F, JETS, SPY
-│   │       • Cleans text data
-│   │       • Removes boilerplate/spam
+│   │       • Retrieves open, close, high, and low daily prices
+│   │       • Previews the data set and columns
 │   │       • Exports:
 │   │           - raw_yfinance_daily_data.csv
 │   │
