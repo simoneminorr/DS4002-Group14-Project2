@@ -53,7 +53,7 @@ Ds4002-Group14-Project2/
 │   │           - raw_yfinance_daily_data.csv
 │   │
 │   └── Script 02: Exploratory & Statistical Analysis.ipynb
-│       └── Performs exploratory data analysis (EDA) :
+│       └── Performs exploratory data analysis (EDA) & Statistical Analysis:
 │           • Comment counts by company
 │           • Sentiment score distributions
 │           • Mean sentiment with 95% confidence intervals
