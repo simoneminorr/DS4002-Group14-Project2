@@ -32,12 +32,12 @@ Ds4002-Group14-Projects/
 │   
 ├── DATA/
 │    │
-│    ├── figures/                                 
+│    └── raw_yfinance_daily_data.csv                                 
 │               
 │
 ├── SCRIPTS/
 │   │
-│   ├── Script_01_Data_Collection.ipynb
+│   ├── Script 01: Load Data.ipynb
 │   │   └── Scrapes Reddit posts and comments for:
 │   │       USPS, UPS, FedEx, DHL
 │   │       • Cleans text data
@@ -47,44 +47,29 @@ Ds4002-Group14-Projects/
 │   │           - shipping_comments_raw.csv
 │   │           - shipping_comments_clean.csv
 │   │
-│   ├── Script_02_Exploratory_Analysis.ipynb
-│   │   └── Performs exploratory data analysis (EDA):
-│   │       • Comment counts by company
-│   │       • Sentiment score distributions
-│   │       • Mean sentiment with 95% confidence intervals
-│   │       • Visualizations (histograms, boxplots, stacked bar charts)
-│   │       • Saves plots to /output/figures/
-│   │
-│   ├── Script_03_Statistical_Analysis.ipynb
-│        └── Performs hypothesis testing:
-│            • One-way ANOVA (mean sentiment differences)
-│            • Levene’s test (variance assumption)
-│            • Tukey HSD post-hoc comparisons
-│            • Binomial tests (>50% negative sentiment)
-│            • Chi-square test of independence
-│            • Cramer's V (effect size)
-│            • Saves statistical tables to /output/tables/
-│   
+│   └── Script 02: Exploratory & Statistical Analysis.ipynb
+│       └── Performs exploratory data analysis (EDA) :
+│           • Comment counts by company
+│           • Sentiment score distributions
+│           • Mean sentiment with 95% confidence intervals
+│           • Visualizations (histograms, boxplots, stacked bar charts)
+│           • Saves plots to /output/figures/
 │               
 │
-├── output/
+└── output/
     │
-    ├── figures/
-    │   └── 
-    │
-    ├── tables/
-    │   ├── 
-    │   ├── 
-    │   ├── 
-    │   ├── 
-    │   └── 
-    │
-    ├── shipping_posts_raw.csv
-    ├── shipping_comments_raw.csv
-    └── shipping_comments_clean.csv
+    ├── 01_normalized_monthly_prices.png
+    ├── 02_monthly_returns.png
+    ├── 03_correlation_matrix.png
+    ├── 04_rolling_correlation_oil_jets.png
+    ├── 05_full_model_comparison_rmse.png
+    ├── 06_full_model_comparison_directional_accuracy.png
+    ├── 07_focused_model_comparison_rmse.png
+    ├── 08_focused_model_comparison_directional_accuracy.png
+    ├── 09_actual_vs_predicted_best_presentation_model.png
+    └── 10_best_rmse_by_model_family.png
 
 ```
-
 
 # Instructions for Reproducing Results
 
