@@ -3,6 +3,7 @@ The goal of this project is to evaluate whether changes in oil prices help expla
 
 ## Contents of this Repository
 
+This repository contains the data, scripts, outputs, and documentation necessary to reproduce our project results. It is organized to make the full workflow transparent, from raw Yahoo Finance downloads to the final forecasting comparisons and visualizations.
 
 ## Software and Platform Selection
 Software: 
@@ -103,7 +104,7 @@ Ensure you are using **Python 3.9 or higher**.
 ### Install Required Packages
 
 ```bash
-pip install pandas numpy matplotlib seaborn scipy statsmodels vaderSentiment requests tqdm
+pip install pandas numpy matplotlib seaborn scipy statsmodels yfinance requests tqdm
 ```
 
 ---
@@ -114,33 +115,46 @@ Navigate to:
 
 ---
 
-### Step 3.1 – Run `***`
+### Step 3.1 – Run `01_download_raw_data.ipynb`
 
-T
+This notebook: 
+- downloads daily Yahoo Finance data for CL-F, JETS, and SPY
+- previews the raw file
+- saves the file as:
+```bash
+DATA/raw_yfinance_daily_data.csv
+```
+
+---
+
+### Step 3.2 – Run `02_process_market_data.ipynb`
+
+This notebook: 
+- loads the raw Yahoo FInance CSV
+- extracts adjusted close prices
+- creates: close price daily, monthly prices, monthly returns, modeling dataframes.
+- Final modeling dataset includes: monthly returns for CL=F, JETS, and SPY; lagged oil returns; lagged SPY returns; rolling 3-month volatility measures; next month JETS returns target.
+- **1.** Generates the main exploratory plots, statistics, and correlation analysis. **2.** performs chronological 80/20 train-test split. **3.** runs benchmark and forecasting models. **4.** compares model performance using RMSE, MAE, actual-predicted correlation, and directional accuracy. **5.** saves final charts and results tables to the output figure folder.
 
 ---
 
-### Step 3.2 – Run `***`
-
-T
-
----
-
-### Step 3.3 – Run `***`
-
-T
-
----
 
 ## 4. Verify Successful Reproduction
 
 You have successfully reproduced the results if:
 
-- A
+- the raw data file is saved in the DATA folder
+- the processed monthly datasets are saved without errors
+- the exploratory figures are saved in the output folder
+- the model comparison files are saved in the output folder
+- the best-model plot and focused presentation plots are generated without errors
 ---
 
 ## Notes
 
-- I
+- JETS does not have data going back to 2010, so the common usable sample begins after JETS inception. This is expected and is not an error in the raw data.
+- JETS does not have data going back to 2010, so the common usable sample begins after JETS inception. This is expected and is not an error in the raw data.
+- The primary project question is whether lagged oil returns add useful forecasting information for next-month JETS returns, not whether oil fully explains airline ETF behavior.
+- The primary project question is whether lagged oil returns add useful forecasting information for next-month JETS returns, not whether oil fully explains airline ETF behavior.
 
 
