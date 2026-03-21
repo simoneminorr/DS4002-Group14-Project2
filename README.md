@@ -40,7 +40,7 @@ Ds4002-Group14-Project2/
 ├── DATA/
 │    │
 │    └── raw_yfinance_daily_data.csv                                 
-│               
+│    └── Dataset Appendix pdf          
 │
 ├── SCRIPTS/
 │   │
